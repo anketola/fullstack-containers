@@ -1,0 +1,6 @@
+docker compose -f docker-compose.dev.yml up -d
+docker exec -it todo-backend-mongo-1 bash
+mongosh -u root -p password
+show dbs
+use the_database
+show collections
